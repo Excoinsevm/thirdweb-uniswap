@@ -1,20 +1,20 @@
 "use client";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./components/ui/card";
 import { Input } from "./ui/input";
 import { Address, toTokens, toUnits, toWei } from "thirdweb";
 import { useActiveAccount } from "thirdweb/react";
-import approve from "@/transactions/approve";
-import swap from "@/transactions/swap";
-import { ROUTER, tokens } from "@/constants";
+import approve from "./transactions/approve";
+import swap from "./transactions/swap";
+import { ROUTER, tokens } from "./constants";
 import TransactionButton from "./TransactionButton";
 import TokenSelect from "./TokenSelect";
-import Token from "@/types/token";
-import useQuote from "@/hooks/useQuote";
-import { cn } from "@/lib/utils";
+import Token from "./types/token";
+import useQuote from "./hooks/useQuote";
+import { cn } from "./lib/utils";
 import { Loader2Icon } from "lucide-react";
 import { allowance as thirdwebAllowance, balanceOf } from "thirdweb/extensions/erc20";
-import getContract from "@/lib/get-contract";
+import getContract from "./lib/get-contract";
 
 const fetchAllowance = async (tokenIn: Token, recipient: Address) => {
     return thirdwebAllowance({ contract: getContract({ address: tokenIn.address }), owner: recipient, spender: ROUTER });
