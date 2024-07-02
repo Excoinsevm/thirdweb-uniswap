@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import { prepareContractCall, toWei } from "thirdweb";
 import { useActiveAccount } from "thirdweb/react";
-import TransactionButton from "@/components/TransactionButton";
+import TransactionButton from "./components/TransactionButton";
 import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 import { Input } from "./ui/input";
-import { Button } from "@/components/ui/button"
+import { Button } from "./components/ui/button"
 import {
     Popover,
     PopoverContent,
