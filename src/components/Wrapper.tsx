@@ -2,17 +2,17 @@
 import React, { useState } from "react";
 import { prepareContractCall, toWei } from "thirdweb";
 import { useActiveAccount } from "thirdweb/react";
-import TransactionButton from "./components/TransactionButton";
-import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
-import { Input } from "./ui/input";
-import { Button } from "./components/ui/button"
+import TransactionButton from "../components/TransactionButton";
+import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
+import { Input } from "../ui/input";
+import { Button } from "../components/ui/button"
 import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from "@/components/ui/popover"
-import { tokens } from "@/constants";
-import getContract from "@/lib/get-contract";
+} from "../components/ui/popover"
+import { tokens } from "../constants";
+import getContract from "../lib/get-contract";
 
 const WETH_CONTRACT = getContract({
     address: tokens["weth"].address
