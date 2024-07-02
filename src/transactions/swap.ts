@@ -1,6 +1,6 @@
-import { FACTORY_CONTRACT, ROUTER, ROUTER_CONTRACT } from "@/constants";
-import getContract from "@/lib/get-contract";
-import Token from "@/types/token";
+import { FACTORY_CONTRACT, ROUTER, ROUTER_CONTRACT } from "./constants";
+import getContract from "./lib/get-contract";
+import Token from "./types/token";
 import { Address, PreparedTransaction, simulateTransaction } from "thirdweb";
 import { getUniswapV3Pool, exactInputSingle } from "thirdweb/extensions/uniswap";
 
