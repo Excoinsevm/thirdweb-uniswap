@@ -1,6 +1,6 @@
 import { prepareContractCall } from "thirdweb";
-import { tokens } from "@/constants";
-import getContract from "@/lib/get-contract";
+import { tokens } from "./constants";
+import getContract from "./lib/get-contract";
 
 type WrapOptions = {
 	amount: bigint;
