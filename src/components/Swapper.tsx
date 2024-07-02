@@ -14,7 +14,7 @@ import useQuote from "../hooks/useQuote";
 import { cn } from "../lib/utils";
 import { Loader2Icon } from "lucide-react";
 import { allowance as thirdwebAllowance, balanceOf } from "thirdweb/extensions/erc20";
-import getContract from "./lib/get-contract";
+import getContract from "../lib/get-contract";
 
 const fetchAllowance = async (tokenIn: Token, recipient: Address) => {
     return thirdwebAllowance({ contract: getContract({ address: tokenIn.address }), owner: recipient, spender: ROUTER });
