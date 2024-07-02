@@ -1,6 +1,6 @@
-import { QUOTER } from "@/constants"
-import getContract from "@/lib/get-contract"
-import Token from "@/types/token"
+import { QUOTER } from "./constants"
+import getContract from "./lib/get-contract"
+import Token from "./types/token"
 import { quoteExactInputSingle } from "thirdweb/extensions/uniswap"
 
 const QUOTER_CONTRACT = getContract({ address: QUOTER })
