@@ -1,6 +1,6 @@
 import { Address } from "thirdweb";
-import Token from "@/types/token";
-import getContract from "@/lib/get-contract";
+import Token from "./types/token";
+import getContract from "./lib/get-contract";
 import { approve as thirdwebApprove } from "thirdweb/extensions/erc20";
 
 type ApproveOptions = {
