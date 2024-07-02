@@ -1,7 +1,7 @@
-import { FACTORY_CONTRACT } from "@/constants";
-import { bigIntMax, withTimeout } from "@/lib/utils";
-import quote from "@/transactions/quote";
-import Token from "@/types/token";
+import { FACTORY_CONTRACT } from "./constants";
+import { bigIntMax, withTimeout } from "./lib/utils";
+import quote from "./transactions/quote";
+import Token from "./types/token";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { simulateTransaction } from "thirdweb";
