@@ -1,13 +1,13 @@
 import { defineChain } from "thirdweb"
 
 export default defineChain({
-    id: 31337,
-    name: "Anvil",
-    rpc: "http://localhost:8545",
-    testnet: true,
+    id: 7171,
+    name: "Bitrock",
+    rpc: "http://connect.bit-rock.io",
+    testnet: false,
     nativeCurrency: {
-        name: "Anvil Ether",
-        symbol: "ETH",
+        name: "Bitrock",
+        symbol: "BROCK",
         decimals: 18,
     },
 });
