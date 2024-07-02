@@ -1,6 +1,6 @@
 import { Address, getContract as thirdwebGetContract, Chain } from "thirdweb";
-import client from "@/lib/thirdweb-client";
-import anvil from "@/lib/anvil";
+import client from "./lib/thirdweb-client";
+import anvil from "./lib/anvil";
 
 type GetContractOptions = {
     address: Address;
