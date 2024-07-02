@@ -1,5 +1,5 @@
 import React from "react";
-import Swapper from "@/components/Swapper";
+import Swapper from "./components/Swapper";
 
 export default function Home() {
   return (
